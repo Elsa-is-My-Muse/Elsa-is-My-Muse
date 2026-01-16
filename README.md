@@ -2,7 +2,7 @@
 
 Welcome to the official repository of my embedded software projects for **Electric Vehicle (EV) Charging Stations**! 🚀
 
-With over **7 years of experience** in embedded software development, including **5 years focused on the EV charging industry**, I specialize in building reliable, efficient, and cutting-edge software for a range of charging solutions. From **AC/DC chargers** to **OCPP**, **ISO15118**, and **DIN70121** compliance, I’ve worked on everything from low-level hardware interfacing to high-level communication protocols.
+With over **8 years of experience** in embedded software development, including **7 years focused on the EV charging industry**, I specialize in building reliable, efficient, and cutting-edge software for a range of charging solutions. From **AC/DC chargers** to **OCPP**, **ISO15118**, and **DIN70121** compliance, I’ve worked on everything from low-level hardware interfacing to high-level communication protocols.
 
 ## 🔧 Key Skills
 
