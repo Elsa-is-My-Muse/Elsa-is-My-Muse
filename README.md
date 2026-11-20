@@ -1,44 +1,53 @@
-# Embedded Software for EV Charging Stations 🚗⚡
+![Elsa — Embedded software, EV charging, and hardware security](assets/profile-banner.svg)
 
-Welcome to the official repository of my embedded software projects for **Electric Vehicle (EV) Charging Stations**! 🚀
+# Elsa · Embedded Software Engineer
 
-With over **8 years of experience** in embedded software development, including **7 years focused on the EV charging industry**, I specialize in building reliable, efficient, and cutting-edge software for a range of charging solutions. From **AC/DC chargers** to **OCPP**, **ISO15118**, and **DIN70121** compliance, I’ve worked on everything from low-level hardware interfacing to high-level communication protocols.
+**EV charging systems · Real-time firmware · Hardware-backed security**
 
-## 🔧 Key Skills
+**English** · [简体中文](README.zh-CN.md)
 
-- **Embedded Software Development** with **MCU** and **RTOS** (uC/OS-II, FreeRTOS)
-- **Charge Station Protocols** (OCPP 1.6, ISO 15118, DIN70121)
-- **Microcontroller Development** (STM32, ARM Cortex, AVR)
-- **Low-Level Drivers & Hardware Interfaces**
-- **System Design & Architecture** for EV chargers
-- **Cloud Integration** (AWS S3, MQTT, etc.)
-- **Open-source Contributions** to EV Charging software stack communities
+I develop embedded software for EV charging systems, from MCU drivers and RTOS applications to charging communication and secure-element integration. I care about clear interfaces, reproducible builds, and firmware that can be tested beyond the target board.
 
-## ⚡ Highlights
+My current open-source work focuses on cryptographic middleware and practical tools for embedded development.
 
-### Projects
+## Selected work
 
-- **OCPP Communication Stack**: Developed a robust, lightweight stack for OCPP1.6 communication with EV chargers.
-- **AC/DC Charger Firmware**: Full firmware development for high-power AC/DC charging stations with protocols compliance.
-- **ISO15118 Integration**: Implemented secure communication and authentication for charging stations, ensuring interoperability with EVs.
-- **Embedded Control Systems**: Designed and optimized real-time systems for energy management and fault detection.
+### [SE050E Crypto Middleware](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware)
 
-### Notable Technologies
+Portable C99 cryptographic middleware for the **NXP SE050E** secure element, with a **PSA Crypto / Mbed TLS** integration layer and an **AT32F435 + RT-Thread** reference port.
 
-- **Embedded C/C++**
-- **uC/OS-II**, **FreeRTOS**
-- **CMake**, **Clang**, **VSCode** (for efficient code management and debugging)
-- **AWS S3**, **MQTT** (for cloud communication)
-- **STM32** (F4/F7 series), **TI MSP430**
+- Session and key management, ECDSA signing, and optional ECDH support.
+- Explicit OS and board interfaces, host-based mocks, and source-export integrity checks.
+- Automated validation on Linux GCC, Linux Clang, and Windows MinGW.
 
-## 💬 Let's Connect!
+[Source](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware) · [Integration guide](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/blob/main/README.en.md) · [Builds](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/actions/workflows/ci.yml)
 
-If you are passionate about **EV Charging** or **Embedded Systems**, feel free to reach out! You can find me on:
+[![SE050E middleware CI](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/actions/workflows/ci.yml)
 
-- [LinkedIn](test)
-- [Twitter](test)
-- [GitHub](test)
+### [Keil Builder](https://github.com/Elsa-is-My-Muse/keil_builder)
 
----
+A Python command-line tool for automating **Keil MDK** builds on Windows. It discovers project files, supports configurable build targets, streams build output, and collects logs and firmware artifacts.
 
-⚡ *Empowering the world with sustainable charging solutions* 🌍🔌
+[Source & usage](https://github.com/Elsa-is-My-Muse/keil_builder#readme)
+
+## Technical focus
+
+| Area | Focus |
+| --- | --- |
+| Embedded firmware | C / C++, ARM Cortex-M, STM32, AT32, RT-Thread, FreeRTOS |
+| EV charging communication | OCPP 1.6, ISO 15118, DIN 70121, EVCC / SECC integration |
+| Cryptography & secure elements | NXP SE050E, PSA Crypto, Mbed TLS, key and certificate integration |
+| Build & verification | Python, CMake, Keil MDK, GCC / Clang, GitHub Actions, host-based tests |
+
+## Engineering approach
+
+- Keep hardware-specific code behind explicit port interfaces.
+- Document supported configurations and integration requirements.
+- Make builds and checks repeatable across development environments.
+- Describe limitations alongside capabilities.
+
+## Get in touch
+
+For technical questions, integration feedback, or collaboration ideas, open an issue in the relevant project:
+
+[SE050E middleware](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/issues) · [Keil Builder](https://github.com/Elsa-is-My-Muse/keil_builder/issues)
