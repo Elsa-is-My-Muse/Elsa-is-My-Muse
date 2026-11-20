@@ -8,9 +8,19 @@
 
 I develop embedded software for EV charging systems, from MCU drivers and RTOS applications to charging communication and secure-element integration. I care about clear interfaces, reproducible builds, and firmware that can be tested beyond the target board.
 
-My current open-source work focuses on cryptographic middleware and practical tools for embedded development.
+My current open-source work covers EV charging communication experiments, cryptographic middleware, and practical tools for embedded development.
 
 ## Selected work
+
+### [V2ICP Lab · VDV 261](https://github.com/Elsa-is-My-Muse/v2icp-lab)
+
+A local **VDV 261 / V2ICP** learning and integration lab that runs a simulated EVCC, a relay for encrypted bytes, and a backend on one machine, using real **IPv6, TLS, and HTTP** communication over loopback.
+
+- Browser dashboard with live vehicle/backend inputs, automatic cycles, and step-by-step exchanges.
+- Fault injection, event inspection, and redacted JSON report export for reproducible experiments.
+- Illustrative C interfaces and hardware integration references for exploring EVCC / SECC integration.
+
+[Source](https://github.com/Elsa-is-My-Muse/v2icp-lab) · [Usage & scope](https://github.com/Elsa-is-My-Muse/v2icp-lab/blob/master/README.en.md) · [Integration references](https://github.com/Elsa-is-My-Muse/v2icp-lab/blob/master/docs/hardware-integration.md)
 
 ### [SE050E Crypto Middleware](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware)
 
@@ -35,7 +45,7 @@ A Python command-line tool for automating **Keil MDK** builds on Windows. It dis
 | Area | Focus |
 | --- | --- |
 | Embedded firmware | C / C++, ARM Cortex-M, STM32, AT32, RT-Thread, FreeRTOS |
-| EV charging communication | OCPP 1.6, ISO 15118, DIN 70121, EVCC / SECC integration |
+| EV charging communication | OCPP 1.6, ISO 15118, DIN 70121, VDV 261 / V2ICP, EVCC / SECC integration |
 | Cryptography & secure elements | NXP SE050E, PSA Crypto, Mbed TLS, key and certificate integration |
 | Build & verification | Python, CMake, Keil MDK, GCC / Clang, GitHub Actions, host-based tests |
 
@@ -50,4 +60,4 @@ A Python command-line tool for automating **Keil MDK** builds on Windows. It dis
 
 For technical questions, integration feedback, or collaboration ideas, open an issue in the relevant project:
 
-[SE050E middleware](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/issues) · [Keil Builder](https://github.com/Elsa-is-My-Muse/keil_builder/issues)
+[V2ICP Lab](https://github.com/Elsa-is-My-Muse/v2icp-lab/issues) · [SE050E middleware](https://github.com/Elsa-is-My-Muse/se050e-crypto-middleware/issues) · [Keil Builder](https://github.com/Elsa-is-My-Muse/keil_builder/issues)
